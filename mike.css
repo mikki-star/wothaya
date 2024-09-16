@@ -1,515 +1,779 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+ }
+ body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 2%;
+    background-color: #0f8cf1b2; 
+ }
+ 
+ .main-container {
+    margin-bottom: 50px;
+ }
+ 
+ .navbar {
+    overflow: hidden;
+    background-color: #f4f4f4;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    z-index: 1000;
+ } 
+ .vertical-align {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+ }
+ 
+ #button {
+   background-color: #060606;
+   color: #fdfbfb;
+   height: 40px;
+   width: 100px;
+   border: none;
+   /* border-radius: 10px; */
+   margin-bottom: 15px;
+   cursor: pointer;
+   margin: 30px;
+ }
+ #button:hover {
+    background-color: #333;
+    transition: background-color 0.3s;
+ }
+ 
+ .video-icon {
+   background-color: gray;
+   border-radius: 50%;
+   height: 50px;
+   width: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 10px;
+ }
+ 
+ .video-icon i {
+   font-size: 24px;
+   color: white;
+   margin: 20px;
+ }
+ 
+ .play-video-link {
+   text-decoration: none;
+   color: gray;
+   font-size: 16px;
+   margin: 10px;
+ }
+ 
+ 
+ /* #button {
+    background-color: #060606;
+    color: #fdfbfb;
+    height: 34px;
+    width: 80px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+ } */
+ 
+ .navbar-left {
+    display: flex;
+    align-items: center;
+ }
+ 
+ .navbar-center {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+ }
+ 
+ .navbar-right {
+    display: flex;
+    align-items: center;
+ }
+ 
+ .navbar-center > a {
+  margin: 0 20px;
+ }
+ 
+ .navbar a {
+    display: block;
+    color: #030303;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5rem;
+ }
+ 
+ .navbar a:hover {
+    background: #ddd;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+ }
+ 
+ .Medilop {
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 20px;
+    color: black;
+ }
+ 
+ .sign {
+    background-color: black;
+    color: #ddd;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ 
+ .log {
+    text-align: right;
+    text-decoration: none;
+    margin-right: 10px;
+    color: #ffffff;
+ }
+ 
+ .head1 {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 3rem;
+   margin-right: 4%;
+}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jumbo Holdings</title>
+.container {
+   display: flex;
+   justify-content: space-between;
+   align-items: top;
+   /* margin: 100px 70px 0 70px; Adjusted top margin for fixed navbar */
+   flex-wrap: wrap;
+   background-color: rgb(234, 231, 231);
+   width: 100%;
+   /* margin: auto; */
+   margin-top: 30px;
+}
 
-  <!-- font awesome cdn link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+.video-container {
+   flex: 1 1 600px;
+   text-align: top;
 
-  <link rel="stylesheet" href=".css">
-</head>
-<body>
+}
 
-  <!-- header section -->
+.image {
+   max-width: 95%;
+   height: auto;
+   border-radius: 10px;
+   margin-left: 10px;
+   height: 500px;
+   width: 850px;
+}
+.video {
+  max-width: 95%;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 10px;
+  height: 500px;
+  width: 850px;
+}
+ 
+ .input-button-wrapper {
+   display: flex;
+   align-items: stretch;
+   border: 2px solid black;
+   /* border-radius: 5px; */
+   overflow: hidden;
+   width: 400px;
+   margin-bottom: 20px;
+ }
+ 
+ #email0 {
+   border: none;
+   padding: 10px;
+   flex: 1;
+   outline: none;
+   font-size: 16px;
+   /* border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px; */
+ }
+ 
+ .submit-btn {
+   background-color: black;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   cursor: pointer;
+   /* border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px; */
+   font-size: 16px;
+ }
+ 
+ .submit-btn:hover {
+   background-color: #333;
+ }
+ 
+ .parag {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+ .sub-container44 {
+   /* display: flex;
+   justify-content: center;
+   margin-bottom: 20px;
+   position: relative; */
+   display: flex;
+   justify-content: space-between;
+   align-items: stretch;
+   padding: 2rem;
+   background-color: black;
+   width: 70%;
+   margin: auto;
+   color: white;
+   margin-top: 50px;
+   margin-bottom: 4rem;
+   
+}
 
-  <header class="header">
+.sub-container44 .span-div {
+   /* display: flex;
+   flex-direction: column;
+   padding: 2rem;
+   background-color: #0202025f;
+   color: #f9fcfb;
+   align-items: center;
+   position: relative;
+   width: 150px;
+   margin-top: 50px; */
+}
 
-    <a href="#" class="logo"><i class="fa fa-car"></i>Jumbo holdings.</a>
+.sub-container44 .line {
+   background-color: #ffffff;
+   width: 2px;
+   height: 80px;
+   align-self: center;
+}
 
-    <nav class="navbar">
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#about">About Us</a>
-      <a href="#best">Our Partners</a>
-      <a href="#review">Reviews</a>
-      <a href="#blog">Our Blog</a>
-      <a href="/video.html">
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jumbo Holdings</title>
+.sub-span {
+   font-size: 3rem;
+}
 
-  <!-- font awesome cdn link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-  <!-- header section -->
-
-  <header class="header">
-
-    <a href="#" class="logo"><i class="fa fa-car"></ijumbo holdings.</a>
-
-    <nav class="navbar">
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#about">About Us</a>
-      <a href="#best">Our Partners</a>
-      <a href="#review">Reviews</a>
-      <a href="#blog">Our Blog</a>
-      <a href="/video.html">Our Gallery</a>
-
-    </nav>
-
-    <div id="menu-btn" class="fas fa-bars"></div>
-
-  </header>
-
-  <!-- end header -->
-
-  <!-- Home Page section-->
-
-  <section class="home" id="home">
-
-    <div class="image">
-      <img src="/static/images/car1.jpg" alt="">
-    </div>
-
-    <div class="content">
-      
-      <h3>We ride with you!</h3>
-      <p>we offer a myriad of services including car sales,car hire,car servicing,hire purchase arrangementsas well as pick ups and dop offs too.;
-        </p>
-
-      <a href="/video.html" class="btn">Play Video<span class="fas fa-chevron-right"></span></a>  
-    </div>
-  </section>
-
-  <!-- End Home page section -->
-  
-  <!-- icons section start -->
-
-  <section class="icons-container">
-    <div class="icons">
-      <i class="fa fa-car"></i>
-      <h3>140+</h3>
-      <p>Serviced Cars</p>
-    </div>
-
-    <div class="icons">
-      <i class="fas fa-users"></i>
-      <h3>1040+</h3>
-      <p>Satisfied Customers</p>
-    </div>
-
-    <div class="icons">
-      <i class="fa fa-car"></i>
-      <h3>500+</h3>
-      <p>Cars in Stock</p>
-    </div>
-
-    <div class="icons">
-      <i class="fa fa-home"></i>
-      <h3>80+</h3>
-      <p>Available Branches</p>
-    </div>
-
-  </section>
-
-  <!-- end icon section -->
-
-  <!-- Service Section -->
-
-  <section class="services" id="services">
-
-    <h1 class="heading">Our <span>Services</span></h1>
+.span-text {
+   text-transform: uppercase;
+}
+ 
+ .footer {
+    background-color: gray;
+    color: black;
+    text-align: center;
+    padding: 40px 20px;
+    margin: auto;
+    width: 96%;
+ }
+ 
+ .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+ }
+ 
+ .footer-column {
+    flex: 1 1 200px;
+    margin: 20px;
+    color: black;
+ }
+ 
+ .footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    border-bottom: 2px solid black;
+    display: inline-block;
+    padding-bottom: 5px;
+ }
+ 
+ .footer-column ul {
+    list-style: none;
+    padding: 0;
+ }
+ 
+ .footer-column ul li {
+    margin-bottom: 10px;
+ }
+ 
+ .footer-column ul li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+ }
+ 
+ .footer-column ul li a:hover {
+    color: #0b0b0b;
+ }
+ 
+ .footer-description {
+    margin: 10px 0;
+    font-size: 0.9rem;
+ }
+ 
+ .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+ }
+ .social-icons a {
+   font-size: 24px;
+   color: black;
+   margin: 0 10px;
+   transition: color 0.3s ease;
+ }
+ 
+ .social-link {
+    color: #0b0b0b;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+ }
+ 
+ .social-link:hover {
+    color: #dddddd;
+ }
+ 
+ .footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    font-size: 0.9rem;
+ }
+ 
+ .bestservice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+ }
+ 
+ .sub-bestservice {
+    background-color: gray;
+    padding: 20px;
+    margin: 13px;
+    color: #fefcfc;
+    align-items: center;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+ }
+ 
+ .sub-bestservice img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+ }
+ 
+ .caps {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.2rem;
+ }
+ 
+ .otherpics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    gap: 20px;
+ }
+ 
+ .sub-otherpics {
+    border: 1px solid white;
+    padding: 10px 15px;
+    background-color: gray;
+    border-radius: 10px;
+    width: 150px;
+    margin: 13px;
+ }
+ 
+ .sub-otherpics img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+ }
+ 
+ .sub-otherpics p {
+    color: white;
+    margin-top: 10px;
+ }
+ 
+ .additional-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 2rem;
+    gap: 0 20px;
+    /* color: #fafbfb; */
+ }
+ .info-ma {
+   font-weight: bold;
+   font-size: 2rem;
+   margin-left: 200px;
+   margin-bottom: 20px;
+ }
+ 
+ .info-item {
+    background-color: gray;
+    padding: 20px;
+    margin: 45px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    color: #ffffff;
+ }
+ 
+ .doctors-section {
+    padding: 2rem;
+    width: 96%;
+    margin: 0 auto;
+    background-color: #f4f2f2;
+    margin-bottom: 20px;
+    /* background-color: #f4f4f4; */
+ }
+ 
+ .main-doctors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
     
-    <div class="box-container">
-      <div class="box">
-        <i class="fa fa-bus"></i>
-        <h3>Car Renting</h3>
-        <p>Some of the features include;
-          Tech faeures like drier assist system,automatic key braking,connectivity apps.</p>
-        <a href="#" class="btn">learn more<span class="fas fa-chevron-right"></span></a>  
-      </div>
-
-      <div class="box">
-        <i class="fa fa-filter"></i>
-        <h3>Filter Replacement</h3>
-        <p>We offer speedy filter replacements that cover your vehicle needs - from oil and air to cabin and fuel.</p>
-        <a href="#" class="btn">learn more<span class="fas fa-chevron-right"></span></a>  
-      </div>
-
-      <div class="box">
-        <i class="fa fa-plug"></i>
-        <h3>Spark Plug Replacement</h3>
-        <p>AutoXpress is your one-stop shop! We carry standard, platinum, and iridium spark plugs.</p>
-        <a href="#" class="btn">learn more<span class="fas fa-chevron-right"></span></a>  
-      </div>
-
-      <div class="box">
-        <i class="fa fa-car"></i>
-        <h3>Oil Change</h3>
-        <p>Our oil change and filter service is fast, reliable and efficient.</p>
-        <a href="#" class="btn">learn more<span class="fas fa-chevron-right"></span></a>  
-      </div>
-
-      <div class="box">
-        <i class="fa fa-bus"></i>
-        <h3>Ac Cooling</h3>
-        <p>Driving in hot and humid conditions can be uncomfortable, especially if your car’s AC system isn’t working properly. <br>Elashbash provides AC cooling services to keep you cool and comfortable while driving. Their technicians use the latest tools and equipment to diagnose and<br> fix issues with your car’s AC system, ensuring you get the best performance and efficiency.</p>
-        <a href="#" class="btn">learn more<span class="fas fa-chevron-right"></span></a>  
-      </div>
-
-      <div class="box">
-        <i class="fa fa-paint-brush"></i>
-        <h3>Denting And Painting</h3>
-        <p>Accidents happen, and when they do, you need a reliable partner to get your car back on the road. <br>Elashbash provides denting and painting services to repair minor and major damages to your vehicle’s body. <br>Their skilled technicians use advanced techniques and high-quality paints to restore your car’s appearance to its original condition.</p>
-        <a href="#" class="btn">learn more<span class="fas fa-chevron-right"></span></a>  
-      </div>
-
-    </div>
-
-
-  </section>
-
-  <!-- end service section -->
-
-
-  <!-- About Section -->
-
-  <section class="about" id="about">
-
-    <h1 class="heading"><span>About</span> Us</h1>
-
-    <div class="row">
-
-      <div class="image">
-        <img src="/static/images/car1.jpg" alt="">
-      </div>
-
-      <div class="content">
-        <h3>We Provide  What You Need</h3>
-        <p>Some of the features include;
-          Tech faeures like drier assist system,automatic key braking,connectivity apps.</p>
-        <p>Some of the features include;
-          Tech faeures like drier assist system,automatic key braking,connectivity apps.</p>
-        <a href="#" class="btn">learn more<span class="fas fa-chevron-right"></span></a>    
-      </div>
-      
-    </div>
-  </section>
-
-  <!-- about section end -->
-
-
-  <!-- partners section -->
-
-  <section class="best" id="best">
-
-    <h1 class="heading">Our <span>Parners</span></h1>
-
-    <div class="box-container">
-
-      <div class="box">
-        <img src="/static/images/toyo1.png" alt="">
-        <h3>Toyota</h3>
-        <span>Social Media Platforms:</span>
-        <div class="share">
-          <a href="#" class="fab fa-facebook-f"></a>
-          <a href="#" class="fab fa-twitter"></a>
-          <a href="#" class="fab fa-instagram"></a>
-          <a href="#" class="fab fa-linkedin"></a>
-
-        </div>
-
-      </div>
-
-      <div class="box">
-        <img src="/static/images/hyun.png" alt="">
-        <h3>Hyundai</h3>
-        <span>Social Media Platforms:</span>
-        <div class="share">
-          <a href="#" class="fab fa-facebook-f"></a>
-          <a href="#" class="fab fa-twitter"></a>
-          <a href="#" class="fab fa-instagram"></a>
-          <a href="#" class="fab fa-linkedin"></a>
-
-        </div>
-
-      </div>
-
-      <div class="box">
-        <img src="/static/images/suz.jpg" alt="">
-        <h3>Suzuki</h3>
-        <span>Social Media Platforms:</span>
-        <div class="share">
-          <a href="#" class="fab fa-facebook-f"></a>
-          <a href="#" class="fab fa-twitter"></a>
-          <a href="#" class="fab fa-instagram"></a>
-          <a href="#" class="fab fa-linkedin"></a>
-
-        </div>
-
-      </div>
-
-      <div class="box">
-        <img src="/static/br4.webp" alt="">
-        <h3>Ford</h3>
-        <span>Social Media Platforms:</span>
-        <div class="share">
-          <a href="#" class="fab fa-facebook-f"></a>
-          <a href="#" class="fab fa-twitter"></a>
-          <a href="#" class="fab fa-instagram"></a>
-          <a href="#" class="fab fa-linkedin"></a>
-
-        </div>
-
-      </div>
-
-      <div class="box">
-        <img src="/static/images/br5.png" alt="">
-        <h3>Isuzu</h3>
-        <span>Social Media Platforms:</span>
-        <div class="share">
-          <a href="#" class="fab fa-facebook-f"></a>
-          <a href="#" class="fab fa-twitter"></a>
-          <a href="#" class="fab fa-instagram"></a>
-          <a href="#" class="fab fa-linkedin"></a>
-
-        </div>
-
-      </div>
-
-      <div class="box">
-        <img src="/static/images/br6.png" alt="">
-        <h3>Tesla</h3>
-        <span>Social Media Platforms:</span>
-        <div class="share">
-          <a href="#" class="fab fa-facebook-f"></a>
-          <a href="#" class="fab fa-twitter"></a>
-          <a href="#" class="fab fa-instagram"></a>
-          <a href="#" class="fab fa-linkedin"></a>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- Partners end -->
-
-  <!-- Reviews Section -->
-
-  <section class="review" id="review">
-
-    <h1 class="heading">Client's <span>Review</span></h1>
-
-    <div class="box-container">
-
-      <div class="box">
-        <img src="/static/images/pp4.webp" alt="">
-        <h3>John Doe</h3>
-        <div class="stars">
-          <i class="fa fa-star" aria-hidden="true"></i>
-          <i class="fa fa-star" aria-hidden="true"></i>
-          <i class="fa fa-star" aria-hidden="true"></i>
-          <i class="fa fa-star" aria-hidden="true"></i>
-          <i class="fa fa-star-half-o" aria-hidden="true"></i>
-        </div>
-        <p class="text"> I have purchased/owned Elashbash (6) everything from Tacomas to PriusC. I had grown accustomed to the quality that went with the brand. However, after purchasing a Highlander, my rating for Toyota has gone from a solid 5 to a 2.</p>
-        <p class="text">My Highlander had a recall for a small part in the engine. I never knew there was a recall on this part until my engine locked up at 146,000 miles and the mechanic told me it had an recall that had never been fixed.</p>  
-
-      </div>
-
-      <div class="box">
-        <img src="/static/pp2.webp" alt="">
-        <h3>Maya Greiks</h3>
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        </div>
-        <p class="text">I have been satisfied with Elashbash but disappointed in 2021 Avalon. Expected it to have a compass<br> or garage door opener but it did not. Visibility of gauges while  driving.</p>
-        <p class="text">Road & Wind noise. AC Blower motor bearings failed after 42800 miles.</p>
-
-      </div>
-
-      <div class="box">
-        <img src="/static/images/pp3.webp" alt="">
-        <h3>Jane Prite</h3>
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        </div>
-        <p class="text">My 2022 Toyota from jumbo holdings Company was totaled in June, 2024. I notified them immediately. Insurance company got Toyota a check for the entire payoff July 29th. <br>Elashbash stated they would stop withdrawals from my account. They did not.<br> They continued to make two payment withdrawals</p>
-        <p class="text">Elashbash refuses to cash the insurance check for payoff. When I’ve called 17 times, Elashbash responds, “Our computers are slow.” Elashbash refuses to respond to emails or customer questions.</p>  
-
-      </div>
-
-
-
-    </div>
-
-
-  </section>
-
-  <!-- end review -->
-
-  <!-- start blog -->
-  
-  <section class="blog" id="blog">
-
-    <h1 class="heading">Our <span>Blog</span></h1>
-
-    <div class="box-container">
-
-      <div class="box">
-        <div class="image">
-          <img src="/static/images/car1.jpg" alt="">
-        </div>
-
-        <div class="content">
-          <div class="icon">
-            <a href="#"><i class="fas fa-calendar"></i> 5th Feb, 2022</a>
-            <a href="#"><i class="fas fa-user"></i> by admin</a>
-          </div>
-          <h3>The Diaspora Fleet</h3>
-          <p>This is a fractional ownership model for vehicles.Members benefit by accessing quality well maintained 
-            cars to use while in the country.Some people refer to it as Owned Vehicles</p>
-          <a href="#" class="btn">learn more<span class="fas fa-chevron-right"></span></a>   
-        </div>
-
-      </div>
-
-      <div class="box">
-        <div class="image">
-          <img src="/static/images/bg3.jpg" alt="">
-        </div>
-
-        <div class="content">
-          <div class="icon">
-            <a href="#"><i class="fas fa-calendar"></i> 15th Aug, 2023</a>
-            <a href="#"><i class="fas fa-user"></i> by admin</a>
-          </div>
-          <h3>Badge Engeneering</h3>
-          <p>Elashbash Company describes badge engineering,also known as rebadging,as the process of attaching different<br> badges or trademark to existing automobile and marketing it as a distinct vehicle model.</p>
-          <a href="#" class="btn">learn more<span class="fas fa-chevron-right"></span></a>   
-        </div>
-
-      </div>
-
-      <div class="box">
-        <div class="image">
-          <img src="/static/images/bg2.webp" alt="">
-        </div>
-
-        <div class="content">
-          <div class="icon">
-            <a href="#"><i class="fas fa-calendar"></i> 10th Sep, 2024</a>
-            <a href="#"><i class="fas fa-user"></i> by admin</a>
-          </div>
-          <h3>Understanding Asset Financing With Elashbash Company</h3>
-          <p>Asset financing,a service provided by Elashbash Company, is a loan accessible based on their financila strenghths and eligibility criteria.<br>This financing solution caters to any Keyan citizen,expatriate or kenyan-based company holding an active bank account with a <br>financial institution operating in kenya.</p>
-          <a href="#" class="btn">learn more<span class="fas fa-chevron-right"></span></a>   
-        </div>
-
-      </div>
-
-    </div>
-
-
-
-  </section>
-
-
-  <!-- end blog -->
-
-
-
-  
-  <!-- footer section -->
-
-  <section class="footer">
-
-    <div class="box-container">
-
-      <div class="box">
-        <h3>quick links</h3>
-        <a href="#"><i class="fas fa-chevron-right"></i>Home</a>
-        <a href="#"><i class="fas fa-chevron-right"></i>Services</a>
-        <a href="#"><i class="fas fa-chevron-right"></i>About Us</a>
-        <a href="#"><i class="fas fa-chevron-right"></i>Our Partners</a>
-        <a href="#"><i class="fas fa-chevron-right"></i>Reviews</a>
-        <a href="#"><i class="fas fa-chevron-right"></i>Blog</a>
-      </div>
-
-      <div class="box">
-        <h3>Our Services</h3>
-        <a href="#"><i class="fas fa-chevron-right"></i>Car rental</a>
-        <a href="#"><i class="fas fa-chevron-right"></i>Filter Replacement</a>
-        <a href="#"><i class="fas fa-chevron-right"></i>Spark Plug Replacement</a>
-        <a href="#"><i class="fas fa-chevron-right"></i>Oil Change</a>
-        <a href="#"><i class="fas fa-chevron-right"></i>Ac Cooling</a>
-        <a href="#"><i class="fas fa-chevron-right"></i>Denting And Painting</a>
-      </div>
-
-      <div class="box">
-        <h3>Contact Info</h3>
-        <a href="#"><i class="fas fa-phone"></i>+2547 123 456 78</a>
-        <a href="#"><i class="fas fa-envelope"></i>telvin@gmail.com</a>
-        <a href="#"><i class="fas fa-map-marker-alt"></i>Nairobi, Kenya</a>
-      </div>
-
-      <div class="box">
-        <h3>Follow Us</h3>
-        <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
-        <a href="#"><i class="fab fa-twitter"></i>twitter</a>
-        <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
-      </div>
-    
-    </div>
-
-    <div class="credit">created by <span>Telvin Alvin</span> | all rights reserved </div>
-
-
-  </section>
-
-
-
-  <!-- end footer -->
-
-
-
-  
-
-
-
-
-
-
-
-</body> 
-
-
-
-
-
-
-
-
-
-
-
-<!--Link To JS-->
-<script src="mike.js"></script>
-
-
-
-
-
-</html>
+ }
+ 
+ .doctors {
+    background-color: gray;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+    color: #fbfdfd;
+    width: 250px;
+    text-align: center;
+ }
+ 
+ .doctors img {
+    width: 100px;
+    height: 100px;
+    /* border-radius: 50%; */
+    object-fit: cover;
+    /* align-items: top;
+    align-content: left; */
+ }
+ 
+ 
+ .doctor22-header {
+    font-size: 3rem;
+    margin-bottom: 40px;
+ }
+ 
+ .Doctor22 {
+   display: flex;
+   justify-content: space-between;
+   align-items: top;
+   width: 96%;
+   /* max-width: 600px; */
+   margin: 20px auto;
+   padding: 10px;
+   background-color: gray;
+   border-radius: 5px;
+ }
+ 
+ .sub-doctor22 {
+   display: flex;
+   flex-direction: column;
+   margin-right: 70px;
+ }
+ 
+ .doctor22-header {
+   font-size: 2rem;
+   margin-bottom: 30px;
+ }
+ 
+ .responsive-image {
+    max-width: 70%;
+    height: 100%;
+    border-radius: 5px;
+    margin-left: 150px;
+ }
+ .button44 {
+   background-color: black;
+   color: aliceblue;
+   width: 150px;
+   height: 40px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   margin-bottom: 40px;
+ }
+ 
+ .onlinecare {
+   display: flex;
+   justify-content: space-between;
+   align-items: top;
+   width: 96%;
+   /* max-width: 600px; */
+   margin: 20px auto;
+   /* padding: 10px; */
+   background-color: gray;
+   /* border-radius: 5px; */
+ }
+ 
+ .onlinecare .responsive-image {
+    max-width: 70%;
+    height: 100%;
+    border-radius: 5px;
+    margin-right: 300px;
+ }
+ 
+ .onlinecare-content {
+    /* max-width: 900px; */
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+ }
+ 
+ .onlinecare-header {
+    font-size: 2rem;
+    margin-bottom: 30px;
+ }
+ 
+ .appointment-button {
+    background-color: black;
+    color: aliceblue;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 40px;
+ }
+ 
+ .testimonials-section {
+    /* padding: 2rem; */
+    width: 96%;
+    margin: 20px auto;
+ }
+ 
+ .testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    /* background-color: blue; */
+    /* width: 96%; */
+    /* margin: 20px auto; */
+ }
+ 
+ .testimonial {
+    background-color: gray;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    /* border-radius: 10px; */
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+ 
+ .testimonial img {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    /* position: absolute; */
+    margin-bottom: 15px;
+ }
+ .testimonial p{
+   text-align: left;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ .registration-section {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 96%;
+   /* max-width: 600px; */
+   margin: 20px auto;
+   padding: 10px;
+   background-color: gray;
+   /* border-radius: 5px; */
+ }
+ 
+ .register-text {
+    font-size: 2rem;
+    /* text-align: center; */
+    margin: 0;
+ }
+ 
+ .submit-button {
+    /* display: block; */
+    background-color: black;
+    color: aliceblue;
+    /* height: 40px;
+    width: 150px; */
+    /* margin: auto; */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1rem;
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+ 
+    .navbar-center {
+        flex-direction: column;
+    }
+ 
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin: 120px 20px 0 20px;
+    }
+ 
+    .bestservice, .main-doctors, .sub-container44, .otherpics, .additional-info, .someinfo, .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .Doctor22, .onlinecare {
+        flex-direction: column;
+        margin: 40px 20px;
+    }
+ 
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .footer-column {
+        margin: 20px 0;
+    }
+ }
+ 
+ @media (max-width: 480px) {
+    .head1 {
+        font-size: 2rem;
+    }
+ 
+    .sub-bestservice img, .doctors img, .sub-otherpics img {
+        width: 100px;
+        height: 100px;
+    }
+ 
+    .button, .sign, .appointment-button, .submit-button {
+        width: 100px;
+    }
+ 
+    .services-section .section-header,
+    .doctors-section .section-header,
+    .steps-section .section-header,
+    .testimonials-section .section-header {
+        font-size: 1.5rem;
+    }
+ 
+    .onlinecare-header {
+        font-size: 2rem;
+    }
+ }
+ .steps-section {
+   /* max-width: 100%; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+   background-color: #f4f2f2;
+   /* border-radius: 10px; */
+   margin: 0 auto;
+   width: 96%;
+ }
+ 
+ .section-header {
+   font-size: 2rem;
+   color: #2c3e50;
+   margin-bottom: 30px;
+   text-align: center;
+ }
+ 
+ .someinfo {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 195px;/* Space between each step-item */
+ }
+ 
+ /* Step Item Styling */
+ .step-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   width: 200px; /* Fixed width */
+   height: 300px; /* Fixed height */
+   padding: 10px;
+   background-color: #fff;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   transition: transform 0.3s ease;
+   overflow: hidden;
+ }
+ 
+ .step-item:hover {
+   transform: translateY(-10px); /* Hover effect */
+ }
+ 
+ /* Image Styling */
+ .step-item img {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   margin-bottom: 15px;
+ }
+ 
+ /* Step Item Text */
+ .step-item p {
+   font-size: 1rem;
+   color: #555;
+   margin: 5px 0;
+   /* Ensuring equal space distribution */
+   flex-grow: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+ }
+ 
+ .steps {
+   /* margin-bottom: 10px; */
+   height: 150px;
+   width: 150px;
+   background-color: grey;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10px;
+ }
